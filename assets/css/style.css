@@ -527,7 +527,7 @@ label {
 
 .form-control {
     height: calc(2.25rem + 2px);
-    width: calc(22.25rem + 2px);
+    width: 100%;
     font-size: 1rem;
     line-height: 1.5;
     color: #006b6a;
@@ -537,6 +537,7 @@ label {
     border-radius: 0rem;
     transition: all .5s ease-in-out;
     outline: none;
+    
 }
 
 .form-control:focus {
@@ -552,7 +553,7 @@ label {
 
 .form-control-msg {
     height: calc(2.25rem + 90px);
-    width: calc(22.25rem + 2px);
+    width: 100%;
     font-size: 1rem;
     line-height: 1.5;
     color: #495057;
@@ -563,6 +564,7 @@ label {
     transition: all .5s ease-in-out;
     outline: none;
     resize: none;
+
 }
 
 
@@ -849,6 +851,10 @@ footer .bottom .links a {
         padding: 85px 42px;
     }
 
+    .contactpg {
+        padding: 85px 42px ;
+    }
+
     footer {
         padding: 85px 42px;
     }
@@ -867,7 +873,20 @@ footer .bottom .links a {
 @media screen and (max-width: 576px) {
 
     nav ul li a {
-        font-size: 13px;
+        font-size: 12px;
+    }
+
+    nav li {
+        /* text-transform: uppercase; */
+        display: inline;
+        padding: 0px 0px 0px 0px;
+        line-height:80%;
+        top: 0; 
+        bottom: 0;
+        left: 0; 
+        right: 0;
+        margin: auto;
+
     }
 
     nav .logo a {
@@ -917,13 +936,9 @@ footer .bottom .links a {
         font-size: 10px;
     }
 
-
-
-    
     nav li {
         /* text-transform: uppercase; */
         display: inline;
-
         padding: 0px 0px 0px 0px;
         line-height:80%;
         top: 0; 
@@ -1044,8 +1059,15 @@ footer .bottom .links a {
     font-weight: bold;
 }
 
+.legal-des-in {
+    text-align: justify;
+    font-size: 15px;
+    line-height: 1; 
+    padding-left: 40px;
+}
+
 .privacy-policy p {
-    padding-right: 13vw;
+
     letter-spacing: 0.8px;
 }
 
@@ -1061,7 +1083,7 @@ footer .bottom .links a {
 }
 
 .legal {
-    position: absolute;
+    position: relative;
     bottom: 25px;
     right: 25px;
 }
