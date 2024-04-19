@@ -638,7 +638,7 @@ ul {
 li {
     /* text-transform: uppercase; */
     display: inline;
-    font-size: 16px;
+
     letter-spacing: 0.1;
     padding: 0px 15px;
 }
@@ -653,15 +653,19 @@ footer {
     padding: 85px;
     display: flex;
     flex-direction: column;
-
 }
 
-footer .top,
+
 footer .bottom {
-    display: flex;
+    display:inline-flex;
     align-items: center;
     justify-content: space-between;
+}
 
+footer .top {    
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 footer .top .social-links {
@@ -794,7 +798,10 @@ footer .bottom .links a {
     }
 
     footer .top ul {
-        display: none;
+        font-size: 14px;
+        display: inline-table;
+        text-align: center;
+        line-height:150%;
     }
 
 }
@@ -808,6 +815,7 @@ footer .bottom .links a {
 
     nav ul {
         display: none;
+        
     }
 
     nav.open .logo {
@@ -815,7 +823,8 @@ footer .bottom .links a {
     }
 
     nav.open ul {
-        display: flex;
+        display: contents;
+        
     }
 
     nav button#menuButton {
@@ -863,6 +872,13 @@ footer .bottom .links a {
         flex-direction: column-reverse;
         gap: 14px;
     }
+    
+    footer .top ul {
+        font-size: 14px;
+        display: inline;
+        text-align: center;
+        line-height:150%;
+    }
 
     .blogs {
         grid-template-columns: repeat(1, 1fr);
@@ -870,7 +886,7 @@ footer .bottom .links a {
 
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 540px) {
 
     nav ul li a {
         font-size: 12px;
@@ -886,7 +902,7 @@ footer .bottom .links a {
         left: 0; 
         right: 0;
         margin: auto;
-
+        align-items: center;
     }
 
     nav .logo a {
@@ -925,6 +941,13 @@ footer .bottom .links a {
     .blogs {
         grid-template-columns: repeat(1, 1fr);
         padding-bottom: 6rem;
+    }
+
+    footer .top ul {
+        font-size: 12px;
+        display: inline-grid;
+        text-align: center;
+        line-height:150%;
     }
 
 }
@@ -973,9 +996,6 @@ footer .bottom .links a {
         width: 100%;
     }
 
-
-
-
     .projects .header button {
         background-color: #5e3bee;
         padding: 0px 0px;
@@ -1012,6 +1032,12 @@ footer .bottom .links a {
         padding-bottom: 6rem;
     }
 
+    footer .top ul {
+        font-size: 12px;
+        display: inline-grid;
+        text-align: center;
+        line-height:150%;
+    }
 
 
 }
@@ -1133,35 +1159,6 @@ footer .bottom .links a {
 
 #contact-social {
     margin-top: 10%;
-}
-
-.footer-full {
-    width: 80vw;
-    margin: 0 auto;
-    padding: 30px 10px;
-    padding-top: 100px;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.footer-credits {
-    float: right;
-    /* display: inline; */
-}
-
-.footer-credits a {
-    color: #444;
-    font-weight: bold;
-    text-decoration: none;
-    transition: all 1s;
-}
-
-.footer-credits a:hover {
-    color: blue;
-    text-decoration: none;
-    font-weight: bold;
 }
 
 .social-icons i {
